@@ -1,0 +1,362 @@
+[
+  {
+    "image": "/images/app1.png",
+    "title": "Focus Flow",
+    "companyName": "ZenLabs",
+    "id": 1,
+    "description": "Boost productivity using Pomodoro and deep focus sessions.",
+    "size": 45,
+    "reviews": 1240,
+    "ratingAvg": 4.6,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 580 }
+    ]
+  },
+  {
+    "image": "/images/app2.png",
+    "title": "FitTrack Pro",
+    "companyName": "Healthify",
+    "id": 2,
+    "description": "Track workouts, calories, and daily activity.",
+    "size": 78,
+    "reviews": 2100,
+    "ratingAvg": 4.4,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 760 },
+      { "name": "5 star", "count": 870 }
+    ]
+  },
+  {
+    "image": "/images/app3.png",
+    "title": "NoteNest",
+    "companyName": "Paperless Inc",
+    "id": 3,
+    "description": "Minimal note-taking app with cloud sync.",
+    "size": 32,
+    "reviews": 980,
+    "ratingAvg": 4.7,
+    "downloads": 180000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 540 }
+    ]
+  },
+  {
+    "image": "/images/app4.png",
+    "title": "Weatherly",
+    "companyName": "SkyTech",
+    "id": 4,
+    "description": "Accurate real-time weather forecasts.",
+    "size": 50,
+    "reviews": 1500,
+    "ratingAvg": 4.3,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 520 },
+      { "name": "5 star", "count": 550 }
+    ]
+  },
+  {
+    "image": "/images/app5.png",
+    "title": "ExpenseMate",
+    "companyName": "FinSmart",
+    "id": 5,
+    "description": "Manage daily expenses and monthly budgets.",
+    "size": 60,
+    "reviews": 870,
+    "ratingAvg": 4.5,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 280 },
+      { "name": "5 star", "count": 370 }
+    ]
+  },
+  {
+    "image": "/images/app6.png",
+    "title": "Learnify",
+    "companyName": "EduCore",
+    "id": 6,
+    "description": "Online learning platform with interactive courses.",
+    "size": 120,
+    "reviews": 3100,
+    "ratingAvg": 4.8,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1860 }
+    ]
+  },
+  {
+    "image": "/images/app7.png",
+    "title": "SleepWell",
+    "companyName": "MindCare",
+    "id": 7,
+    "description": "Improve sleep with guided relaxation sounds.",
+    "size": 55,
+    "reviews": 1450,
+    "ratingAvg": 4.6,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 755 }
+    ]
+  },
+  {
+    "image": "/images/app8.png",
+    "title": "RecipeBox",
+    "companyName": "CookEasy",
+    "id": 8,
+    "description": "Discover and save delicious recipes.",
+    "size": 65,
+    "reviews": 2300,
+    "ratingAvg": 4.4,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 750 },
+      { "name": "5 star", "count": 950 }
+    ]
+  },
+  {
+    "image": "/images/app9.png",
+    "title": "TravelGo",
+    "companyName": "WanderTech",
+    "id": 9,
+    "description": "Plan trips and explore destinations.",
+    "size": 90,
+    "reviews": 1750,
+    "ratingAvg": 4.2,
+    "downloads": 420000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 310 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 520 }
+    ]
+  },
+  {
+    "image": "/images/app10.png",
+    "title": "ChatLoop",
+    "companyName": "Connectify",
+    "id": 10,
+    "description": "Fast and secure messaging app.",
+    "size": 70,
+    "reviews": 5000,
+    "ratingAvg": 4.9,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 3800 }
+    ]
+  },
+  {
+    "image": "/images/app11.png",
+    "title": "DailyPlanner",
+    "companyName": "TaskZen",
+    "id": 11,
+    "description": "Organize tasks and daily schedules.",
+    "size": 40,
+    "reviews": 760,
+    "ratingAvg": 4.3,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 45 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 320 }
+    ]
+  },
+  {
+    "image": "/images/app12.png",
+    "title": "PhotoFix",
+    "companyName": "PixelWorks",
+    "id": 12,
+    "description": "Edit photos with professional tools.",
+    "size": 150,
+    "reviews": 3400,
+    "ratingAvg": 4.7,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 980 },
+      { "name": "5 star", "count": 1960 }
+    ]
+  },
+  {
+    "image": "/images/app13.png",
+    "title": "MusicWave",
+    "companyName": "SoundLab",
+    "id": 13,
+    "description": "Stream and download your favorite music.",
+    "size": 110,
+    "reviews": 4100,
+    "ratingAvg": 4.5,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 420 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2160 }
+    ]
+  },
+  {
+    "image": "/images/app14.png",
+    "title": "LanguagePlus",
+    "companyName": "LinguaSoft",
+    "id": 14,
+    "description": "Learn new languages with AI support.",
+    "size": 95,
+    "reviews": 2600,
+    "ratingAvg": 4.6,
+    "downloads": 700000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 240 },
+      { "name": "4 star", "count": 720 },
+      { "name": "5 star", "count": 1480 }
+    ]
+  },
+  {
+    "image": "/images/app15.png",
+    "title": "ScanDoc",
+    "companyName": "OfficePro",
+    "id": 15,
+    "description": "Scan and digitize documents easily.",
+    "size": 48,
+    "reviews": 1100,
+    "ratingAvg": 4.2,
+    "downloads": 260000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 400 }
+    ]
+  },
+  {
+    "image": "/images/app16.png",
+    "title": "CryptoWatch",
+    "companyName": "BlockSense",
+    "id": 16,
+    "description": "Track crypto prices in real time.",
+    "size": 85,
+    "reviews": 1950,
+    "ratingAvg": 4.4,
+    "downloads": 480000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 900 }
+    ]
+  },
+  {
+    "image": "/images/app17.png",
+    "title": "HomeControl",
+    "companyName": "Smartify",
+    "id": 17,
+    "description": "Control smart home devices from one app.",
+    "size": 100,
+    "reviews": 870,
+    "ratingAvg": 4.1,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 260 },
+      { "name": "5 star", "count": 260 }
+    ]
+  },
+  {
+    "image": "/images/app18.png",
+    "title": "MindJournal",
+    "companyName": "WellBeing Co",
+    "id": 18,
+    "description": "Daily journaling for mental clarity.",
+    "size": 38,
+    "reviews": 620,
+    "ratingAvg": 4.7,
+    "downloads": 140000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+  {
+    "image": "/images/app19.png",
+    "title": "StockPilot",
+    "companyName": "TradeSmart",
+    "id": 19,
+    "description": "Analyze stocks and manage investments.",
+    "size": 105,
+    "reviews": 2900,
+    "ratingAvg": 4.3,
+    "downloads": 650000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 170 },
+      { "name": "3 star", "count": 340 },
+      { "name": "4 star", "count": 820 },
+      { "name": "5 star", "count": 1440 }
+    ]
+  },
+  {
+    "image": "/images/app20.png",
+    "title": "AR Measure",
+    "companyName": "VisionTech",
+    "id": 20,
+    "description": "Measure objects using augmented reality.",
+    "size": 92,
+    "reviews": 980,
+    "ratingAvg": 4.5,
+    "downloads": 230000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 310 },
+      { "name": "5 star", "count": 440 }
+    ]
+  }
+]
