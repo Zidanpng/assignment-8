@@ -1,10 +1,10 @@
 [
   {
-    "image": "/images/app1.png",
+    "image": "https://source.unsplash.com/400x400/?productivity,app",
     "title": "Focus Flow",
     "companyName": "ZenLabs",
     "id": 1,
-    "description": "Boost productivity using Pomodoro and deep focus sessions.",
+    "description": "Focus Flow helps you maximize productivity using scientifically proven Pomodoro techniques and deep-focus sessions. The app includes customizable timers, distraction tracking, focus statistics, and daily productivity reports to help you build strong work habits and stay consistent.",
     "size": 45,
     "reviews": 1240,
     "ratingAvg": 4.6,
@@ -18,11 +18,11 @@
     ]
   },
   {
-    "image": "/images/app2.png",
+    "image": "https://source.unsplash.com/400x400/?fitness,tracking",
     "title": "FitTrack Pro",
     "companyName": "Healthify",
     "id": 2,
-    "description": "Track workouts, calories, and daily activity.",
+    "description": "FitTrack Pro is an all-in-one fitness companion that tracks workouts, calories, steps, heart rate, and daily activity. With smart insights, personalized goals, and progress charts, it helps users stay motivated and improve their physical health.",
     "size": 78,
     "reviews": 2100,
     "ratingAvg": 4.4,
@@ -36,11 +36,11 @@
     ]
   },
   {
-    "image": "/images/app3.png",
+    "image": "https://source.unsplash.com/400x400/?notes,writing",
     "title": "NoteNest",
     "companyName": "Paperless Inc",
     "id": 3,
-    "description": "Minimal note-taking app with cloud sync.",
+    "description": "NoteNest is a clean and distraction-free note-taking app designed for speed and simplicity. It offers cloud synchronization, markdown support, offline access, and powerful search so your ideas are always organized and accessible.",
     "size": 32,
     "reviews": 980,
     "ratingAvg": 4.7,
@@ -54,11 +54,11 @@
     ]
   },
   {
-    "image": "/images/app4.png",
+    "image": "https://source.unsplash.com/400x400/?weather,sky",
     "title": "Weatherly",
     "companyName": "SkyTech",
     "id": 4,
-    "description": "Accurate real-time weather forecasts.",
+    "description": "Weatherly provides accurate real-time weather forecasts with hourly updates, severe weather alerts, and interactive maps. Designed for clarity and speed, it helps users plan their day with confidence.",
     "size": 50,
     "reviews": 1500,
     "ratingAvg": 4.3,
@@ -72,11 +72,11 @@
     ]
   },
   {
-    "image": "/images/app5.png",
+    "image": "https://source.unsplash.com/400x400/?finance,money",
     "title": "ExpenseMate",
     "companyName": "FinSmart",
     "id": 5,
-    "description": "Manage daily expenses and monthly budgets.",
+    "description": "ExpenseMate helps you manage daily expenses, track income, and create monthly budgets effortlessly. Visual reports and smart reminders allow you to understand spending patterns and save money more effectively.",
     "size": 60,
     "reviews": 870,
     "ratingAvg": 4.5,
@@ -90,11 +90,11 @@
     ]
   },
   {
-    "image": "/images/app6.png",
+    "image": "https://source.unsplash.com/400x400/?online,learning",
     "title": "Learnify",
     "companyName": "EduCore",
     "id": 6,
-    "description": "Online learning platform with interactive courses.",
+    "description": "Learnify is an interactive learning platform featuring expert-led courses, quizzes, and certifications. With personalized learning paths and progress tracking, it empowers learners to build real-world skills at their own pace.",
     "size": 120,
     "reviews": 3100,
     "ratingAvg": 4.8,
@@ -107,66 +107,13 @@
       { "name": "5 star", "count": 1860 }
     ]
   },
+
   {
-    "image": "/images/app7.png",
-    "title": "SleepWell",
-    "companyName": "MindCare",
-    "id": 7,
-    "description": "Improve sleep with guided relaxation sounds.",
-    "size": 55,
-    "reviews": 1450,
-    "ratingAvg": 4.6,
-    "downloads": 320000,
-    "ratings": [
-      { "name": "1 star", "count": 35 },
-      { "name": "2 star", "count": 60 },
-      { "name": "3 star", "count": 180 },
-      { "name": "4 star", "count": 420 },
-      { "name": "5 star", "count": 755 }
-    ]
-  },
-  {
-    "image": "/images/app8.png",
-    "title": "RecipeBox",
-    "companyName": "CookEasy",
-    "id": 8,
-    "description": "Discover and save delicious recipes.",
-    "size": 65,
-    "reviews": 2300,
-    "ratingAvg": 4.4,
-    "downloads": 600000,
-    "ratings": [
-      { "name": "1 star", "count": 100 },
-      { "name": "2 star", "count": 150 },
-      { "name": "3 star", "count": 350 },
-      { "name": "4 star", "count": 750 },
-      { "name": "5 star", "count": 950 }
-    ]
-  },
-  {
-    "image": "/images/app9.png",
-    "title": "TravelGo",
-    "companyName": "WanderTech",
-    "id": 9,
-    "description": "Plan trips and explore destinations.",
-    "size": 90,
-    "reviews": 1750,
-    "ratingAvg": 4.2,
-    "downloads": 420000,
-    "ratings": [
-      { "name": "1 star", "count": 120 },
-      { "name": "2 star", "count": 180 },
-      { "name": "3 star", "count": 310 },
-      { "name": "4 star", "count": 620 },
-      { "name": "5 star", "count": 520 }
-    ]
-  },
-  {
-    "image": "/images/app10.png",
+    "image": "https://source.unsplash.com/400x400/?chat,messaging",
     "title": "ChatLoop",
     "companyName": "Connectify",
     "id": 10,
-    "description": "Fast and secure messaging app.",
+    "description": "ChatLoop is a fast, secure messaging app offering end-to-end encryption, group chats, voice messages, and cloud backups. Built for performance and privacy, it keeps you connected anytime, anywhere.",
     "size": 70,
     "reviews": 5000,
     "ratingAvg": 4.9,
@@ -179,48 +126,13 @@
       { "name": "5 star", "count": 3800 }
     ]
   },
+
   {
-    "image": "/images/app11.png",
-    "title": "DailyPlanner",
-    "companyName": "TaskZen",
-    "id": 11,
-    "description": "Organize tasks and daily schedules.",
-    "size": 40,
-    "reviews": 760,
-    "ratingAvg": 4.3,
-    "downloads": 120000,
-    "ratings": [
-      { "name": "1 star", "count": 25 },
-      { "name": "2 star", "count": 45 },
-      { "name": "3 star", "count": 120 },
-      { "name": "4 star", "count": 250 },
-      { "name": "5 star", "count": 320 }
-    ]
-  },
-  {
-    "image": "/images/app12.png",
-    "title": "PhotoFix",
-    "companyName": "PixelWorks",
-    "id": 12,
-    "description": "Edit photos with professional tools.",
-    "size": 150,
-    "reviews": 3400,
-    "ratingAvg": 4.7,
-    "downloads": 900000,
-    "ratings": [
-      { "name": "1 star", "count": 90 },
-      { "name": "2 star", "count": 110 },
-      { "name": "3 star", "count": 260 },
-      { "name": "4 star", "count": 980 },
-      { "name": "5 star", "count": 1960 }
-    ]
-  },
-  {
-    "image": "/images/app13.png",
+    "image": "https://source.unsplash.com/400x400/?music,headphones",
     "title": "MusicWave",
     "companyName": "SoundLab",
     "id": 13,
-    "description": "Stream and download your favorite music.",
+    "description": "MusicWave lets you stream and download millions of songs with high-quality audio, personalized playlists, and offline listening. Discover new artists, create playlists, and enjoy music without limits.",
     "size": 110,
     "reviews": 4100,
     "ratingAvg": 4.5,
@@ -231,132 +143,6 @@
       { "name": "3 star", "count": 420 },
       { "name": "4 star", "count": 1200 },
       { "name": "5 star", "count": 2160 }
-    ]
-  },
-  {
-    "image": "/images/app14.png",
-    "title": "LanguagePlus",
-    "companyName": "LinguaSoft",
-    "id": 14,
-    "description": "Learn new languages with AI support.",
-    "size": 95,
-    "reviews": 2600,
-    "ratingAvg": 4.6,
-    "downloads": 700000,
-    "ratings": [
-      { "name": "1 star", "count": 70 },
-      { "name": "2 star", "count": 90 },
-      { "name": "3 star", "count": 240 },
-      { "name": "4 star", "count": 720 },
-      { "name": "5 star", "count": 1480 }
-    ]
-  },
-  {
-    "image": "/images/app15.png",
-    "title": "ScanDoc",
-    "companyName": "OfficePro",
-    "id": 15,
-    "description": "Scan and digitize documents easily.",
-    "size": 48,
-    "reviews": 1100,
-    "ratingAvg": 4.2,
-    "downloads": 260000,
-    "ratings": [
-      { "name": "1 star", "count": 60 },
-      { "name": "2 star", "count": 90 },
-      { "name": "3 star", "count": 200 },
-      { "name": "4 star", "count": 350 },
-      { "name": "5 star", "count": 400 }
-    ]
-  },
-  {
-    "image": "/images/app16.png",
-    "title": "CryptoWatch",
-    "companyName": "BlockSense",
-    "id": 16,
-    "description": "Track crypto prices in real time.",
-    "size": 85,
-    "reviews": 1950,
-    "ratingAvg": 4.4,
-    "downloads": 480000,
-    "ratings": [
-      { "name": "1 star", "count": 80 },
-      { "name": "2 star", "count": 110 },
-      { "name": "3 star", "count": 260 },
-      { "name": "4 star", "count": 600 },
-      { "name": "5 star", "count": 900 }
-    ]
-  },
-  {
-    "image": "/images/app17.png",
-    "title": "HomeControl",
-    "companyName": "Smartify",
-    "id": 17,
-    "description": "Control smart home devices from one app.",
-    "size": 100,
-    "reviews": 870,
-    "ratingAvg": 4.1,
-    "downloads": 200000,
-    "ratings": [
-      { "name": "1 star", "count": 70 },
-      { "name": "2 star", "count": 100 },
-      { "name": "3 star", "count": 180 },
-      { "name": "4 star", "count": 260 },
-      { "name": "5 star", "count": 260 }
-    ]
-  },
-  {
-    "image": "/images/app18.png",
-    "title": "MindJournal",
-    "companyName": "WellBeing Co",
-    "id": 18,
-    "description": "Daily journaling for mental clarity.",
-    "size": 38,
-    "reviews": 620,
-    "ratingAvg": 4.7,
-    "downloads": 140000,
-    "ratings": [
-      { "name": "1 star", "count": 15 },
-      { "name": "2 star", "count": 25 },
-      { "name": "3 star", "count": 80 },
-      { "name": "4 star", "count": 200 },
-      { "name": "5 star", "count": 300 }
-    ]
-  },
-  {
-    "image": "/images/app19.png",
-    "title": "StockPilot",
-    "companyName": "TradeSmart",
-    "id": 19,
-    "description": "Analyze stocks and manage investments.",
-    "size": 105,
-    "reviews": 2900,
-    "ratingAvg": 4.3,
-    "downloads": 650000,
-    "ratings": [
-      { "name": "1 star", "count": 130 },
-      { "name": "2 star", "count": 170 },
-      { "name": "3 star", "count": 340 },
-      { "name": "4 star", "count": 820 },
-      { "name": "5 star", "count": 1440 }
-    ]
-  },
-  {
-    "image": "/images/app20.png",
-    "title": "AR Measure",
-    "companyName": "VisionTech",
-    "id": 20,
-    "description": "Measure objects using augmented reality.",
-    "size": 92,
-    "reviews": 980,
-    "ratingAvg": 4.5,
-    "downloads": 230000,
-    "ratings": [
-      { "name": "1 star", "count": 35 },
-      { "name": "2 star", "count": 55 },
-      { "name": "3 star", "count": 140 },
-      { "name": "4 star", "count": 310 },
-      { "name": "5 star", "count": 440 }
     ]
   }
 ]
