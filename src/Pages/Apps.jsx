@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import AppCard from "../components/AppCard";
+import ErrorApps from "./ErrorApps";
+import Loading from "../components/Loading";
+
 const Apps = () => {
+  const [appData, setAppData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/apps.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setAppData(data);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <Loading></Loading>;
+
+  const filteredApps = appData.filter((app) =>
+    app.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div className="min-h-screen bg-[#f5f5f5] px-4 py-6">
       <div className="px-8 mx-auto">
@@ -13,7 +35,7 @@ const Apps = () => {
         </div>
         {/* search bar */}
         <div className="flex justify-between mb-4">
-          <div className="font-bold">(132) Apps Found</div>
+          <div className="font-bold">({filteredApps.length}) Apps Found</div>
           <div>
             <label className="input">
               <svg
@@ -32,14 +54,25 @@ const Apps = () => {
                   <path d="m21 21-4.3-4.3"></path>
                 </g>
               </svg>
-              <input type="search" required placeholder="Search Apps" />
+              <input
+                type="search"
+                required
+                placeholder="Search Apps"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
             </label>
           </div>
         </div>
-        {/* card part */}
-        <div className="grid grid-cols-4 grid-rows-5 gap-4">
-          <AppCard></AppCard>
-        </div>
+        {filteredApps.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {filteredApps.map((app) => (
+              <AppCard key={app.id} app={app}></AppCard>
+            ))}
+          </div>
+        ) : (
+          <ErrorApps onClear={() => setSearchTerm("")}></ErrorApps>
+        )}
       </div>
     </div>
   );

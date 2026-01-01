@@ -1,7 +1,13 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import logo from "../assets/logo.png";
+import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
+  const location = useLocation();
+  const isActive = (path) =>
+    location.pathname === path
+      ? "bg-gradient-to-br from-purple-800 to-purple-500 inline-block text-transparent bg-clip-text border-b border-purple-800"
+      : "text-gray-600";
   return (
     <div className="navbar bg-base-100 shadow-sm px-8">
       <div className="navbar-start">
@@ -28,13 +34,19 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Home</a>
+              <Link to="/" className={isActive("/")}>
+                Home
+              </Link>
             </li>
             <li>
-              <a>Apps</a>
+              <Link to="/apps" className={isActive("/apps")}>
+                Apps
+              </Link>
             </li>
             <li>
-              <a>Installation</a>
+              <Link to="/installations" className={isActive("/installations")}>
+                Installations
+              </Link>
             </li>
           </ul>
         </div>
@@ -47,14 +59,20 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li className="font-semibold">
-            <a>Home</a>
+          <li>
+            <Link to="/" className={isActive("/")}>
+              Home
+            </Link>
           </li>
-          <li className="font-semibold">
-            <a>Apps</a>
+          <li>
+            <Link to="/apps" className={isActive("/apps")}>
+              Apps
+            </Link>
           </li>
-          <li className="font-semibold">
-            <a>Installation</a>
+          <li>
+            <Link to="/installations" className={isActive("/installations")}>
+              Installations
+            </Link>
           </li>
         </ul>
       </div>

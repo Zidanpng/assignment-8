@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaAppStoreIos } from "react-icons/fa";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
+import download from "../assets/icon-downloads.png";
+import star from "../assets/icon-ratings.png";
 import hero from "../assets/hero.png";
 import AppCard from "../components/AppCard";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const [appData, setAppData] = useState([]);
+
+  useEffect(() => {
+    fetch("/apps.json")
+      .then((response) => response.json())
+      .then((data) => setAppData(data))
+      .catch((error) => console.error("Error loading JSON:", error));
+  }, []);
+  const topApps = (appData || []).slice(0, 8);
   return (
     <>
       <div className="min-h-screen bg-[#f5f5f5] overflow-hidden">
@@ -73,10 +86,50 @@ const Home = () => {
           </p>
         </div>
         <div className="grid grid-cols-4 grid-rows-2 gap-4">
-          <AppCard></AppCard>
+          {topApps.map((app) => (
+            <div
+              key={app.id}
+              onClick={() => navigate(`/apps/${app.id}`)}
+              className="bg-white rounded-lg p-4 "
+            >
+              <img
+                className="h-72  bg-gray-500 rounded-lg mx-auto"
+                src={app.image}
+                alt={app.title}
+              />
+              <h3 className="font-semibold text-gray-800 text-[23px] text-center py-3">
+                {app.title}
+              </h3>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center bg-[#F1F5E8] p-1 rounded-sm">
+                  <span className="mr-1">
+                    <img
+                      className="h-4 w-4 text-green-400"
+                      src={download}
+                      alt=""
+                    />
+                  </span>
+                  <span className="text-base font-medium text-green-400">
+                    {app.downloads}
+                  </span>
+                </div>
+                <div className="flex items-center bg-[#FFF0E1] p-1 rounded-sm w-12 justify-evenly">
+                  <span className="text-yellow-400 mr-1">
+                    <img className="h-4 w-4" src={star} alt="" />
+                  </span>
+                  <span className="text-base font-medium text-yellow-400">
+                    {app.ratingAvg}
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
         <div className="mt-8 mb-12 flex items-center justify-center">
-          <button class="btn text-white text-lg bg-gradient-to-br from-purple-900 to-purple-500">
+          <button
+            onClick={() => navigate("/apps")}
+            className="btn text-white text-lg bg-gradient-to-br from-purple-900 to-purple-500"
+          >
             Show All
           </button>
         </div>

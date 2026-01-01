@@ -4,7 +4,7 @@
     "title": "Focus Flow",
     "companyName": "ZenLabs",
     "id": 1,
-    "description": "Focus Flow helps you maximize productivity using scientifically proven Pomodoro techniques and deep-focus sessions. The app includes customizable timers, distraction tracking, focus statistics, and daily productivity reports to help you build strong work habits and stay consistent.",
+    "description": "Focus Flow is your ultimate productivity companion, designed to help you master time management through the power of the Pomodoro technique. Beyond simple timers, it offers detailed analytics to track your peak focus hours, a distraction blocker to keep you on task, and customizable session goals. Whether you are a student, freelancer, or professional, Focus Flow adapts to your rhythm, providing daily insight reports and a seamless cross-device experience to ensure you never lose track of your progress.",
     "size": 45,
     "reviews": 1240,
     "ratingAvg": 4.6,
@@ -22,7 +22,7 @@
     "title": "FitTrack Pro",
     "companyName": "Healthify",
     "id": 2,
-    "description": "FitTrack Pro is an all-in-one fitness companion that tracks workouts, calories, steps, heart rate, and daily activity. With smart insights, personalized goals, and progress charts, it helps users stay motivated and improve their physical health.",
+    "description": "FitTrack Pro revolutionizes your fitness journey by acting as a comprehensive health dashboard right in your pocket. It monitors essential metrics such as heart rate variability, sleep quality, and caloric intake, while offering a vast library of guided workouts ranging from HIIT to Yoga. With its built-in community features, you can challenge friends, share milestones, and sync data with top wearable devices, making it easier than ever to stay accountable and achieve your physical potential.",
     "size": 78,
     "reviews": 2100,
     "ratingAvg": 4.4,
@@ -40,7 +40,7 @@
     "title": "NoteNest",
     "companyName": "Paperless Inc",
     "id": 3,
-    "description": "NoteNest is a clean and distraction-free note-taking app designed for speed and simplicity. It offers cloud synchronization, markdown support, offline access, and powerful search so your ideas are always organized and accessible.",
+    "description": "NoteNest is a clean, distraction-free note-taking ecosystem designed for speed, simplicity, and organization. It offers advanced cloud synchronization, full markdown support for developers, and offline access so your ideas are never lost. With powerful nested folders, bi-directional linking, and instant search capabilities, NoteNest ensures that your knowledge base remains structured and easily accessible, no matter how complex your projects become.",
     "size": 32,
     "reviews": 980,
     "ratingAvg": 4.7,
@@ -58,7 +58,7 @@
     "title": "Weatherly",
     "companyName": "SkyTech",
     "id": 4,
-    "description": "Weatherly provides accurate real-time weather forecasts with hourly updates, severe weather alerts, and interactive maps. Designed for clarity and speed, it helps users plan their day with confidence.",
+    "description": "Weatherly provides hyper-accurate, real-time weather forecasts powered by local meteorological stations and satellite data. It features hourly updates, severe weather alerts, and beautiful interactive radar maps to track storms. Designed for clarity and speed, the interface includes detailed breakdowns of UV index, humidity, and wind speed, helping users plan their day, travel, or outdoor activities with absolute confidence and safety.",
     "size": 50,
     "reviews": 1500,
     "ratingAvg": 4.3,
@@ -76,7 +76,7 @@
     "title": "ExpenseMate",
     "companyName": "FinSmart",
     "id": 5,
-    "description": "ExpenseMate helps you manage daily expenses, track income, and create monthly budgets effortlessly. Visual reports and smart reminders allow you to understand spending patterns and save money more effectively.",
+    "description": "ExpenseMate takes the stress out of personal finance by helping you manage daily expenses, track income sources, and create realistic monthly budgets effortlessly. It features intuitive visual reports, receipt scanning via camera, and smart reminders for bill payments. By categorizing your spending habits and visualizing where your money goes, ExpenseMate empowers you to save more effectively and achieve your financial goals faster.",
     "size": 60,
     "reviews": 870,
     "ratingAvg": 4.5,
@@ -94,7 +94,7 @@
     "title": "Learnify",
     "companyName": "EduCore",
     "id": 6,
-    "description": "Learnify is an interactive learning platform featuring expert-led courses, quizzes, and certifications. With personalized learning paths and progress tracking, it empowers learners to build real-world skills at their own pace.",
+    "description": "Learnify is a premier interactive learning platform featuring expert-led courses, engaging quizzes, and professional certifications across various industries. With personalized learning paths, progress tracking, and offline video support, it empowers learners to build real-world skills at their own pace. Whether you are upskilling for a promotion or exploring a new hobby, Learnify brings the classroom to your fingertips with a vibrant community of learners.",
     "size": 120,
     "reviews": 3100,
     "ratingAvg": 4.8,
@@ -107,13 +107,66 @@
       { "name": "5 star", "count": 1860 }
     ]
   },
-
+  {
+    "image": "https://source.unsplash.com/400x400/?travel,map",
+    "title": "SwiftRide",
+    "companyName": "UrbanGo",
+    "id": 7,
+    "description": "SwiftRide is the smartest way to navigate your city, offering real-time public transit schedules, ride-sharing options, and bike rental locations all in one app. It predicts travel times using live traffic data and suggests the most eco-friendly routes. With integrated payment options for trains and buses, SwiftRide ensures a hassle-free commute, helping you save time and money while reducing your carbon footprint.",
+    "size": 55,
+    "reviews": 1800,
+    "ratingAvg": 4.2,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 750 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?cooking,food",
+    "title": "Chef's Corner",
+    "companyName": "Culinary Arts",
+    "id": 8,
+    "description": "Chef's Corner is a culinary haven for food lovers, offering thousands of recipes tailored to your dietary preferences and available ingredients. It features step-by-step video tutorials, shopping list integration, and a meal planner to simplify your week. Join a community of home cooks, share your own creations, and discover global cuisines that will transform your kitchen into a five-star restaurant.",
+    "size": 95,
+    "reviews": 3400,
+    "ratingAvg": 4.7,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 2200 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?crypto,bitcoin",
+    "title": "CryptoVault",
+    "companyName": "BlockSecure",
+    "id": 9,
+    "description": "CryptoVault is a secure and intuitive wallet for managing your digital assets, supporting Bitcoin, Ethereum, and hundreds of altcoins. It features real-time market charts, price alerts, and a built-in decentralized exchange for instant swaps. With military-grade encryption and biometric security, CryptoVault ensures your investments are safe while providing you with the tools to stay ahead in the fast-paced world of cryptocurrency.",
+    "size": 40,
+    "reviews": 2200,
+    "ratingAvg": 4.1,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 850 }
+    ]
+  },
   {
     "image": "https://source.unsplash.com/400x400/?chat,messaging",
     "title": "ChatLoop",
     "companyName": "Connectify",
     "id": 10,
-    "description": "ChatLoop is a fast, secure messaging app offering end-to-end encryption, group chats, voice messages, and cloud backups. Built for performance and privacy, it keeps you connected anytime, anywhere.",
+    "description": "ChatLoop is a fast, secure messaging app built for performance and privacy, offering end-to-end encryption for all your conversations. It supports high-quality group video calls, voice messages, and seamless cloud backups. With features like vanishing messages, custom themes, and large file sharing, ChatLoop keeps you connected with friends, family, and colleagues anytime, anywhere, without compromising your data security.",
     "size": 70,
     "reviews": 5000,
     "ratingAvg": 4.9,
@@ -126,13 +179,48 @@
       { "name": "5 star", "count": 3800 }
     ]
   },
-
+  {
+    "image": "https://source.unsplash.com/400x400/?art,design",
+    "title": "PixelStudio",
+    "companyName": "Creative Minds",
+    "id": 11,
+    "description": "PixelStudio is a powerful digital art studio for artists and designers, offering a wide array of brushes, layers, and blending modes. Whether you are sketching, painting, or editing photos, the intuitive interface adapts to your workflow. It supports Apple Pencil integration, PSD export, and time-lapse recording, making it the perfect tool for creating stunning visual content on the go.",
+    "size": 110,
+    "reviews": 1200,
+    "ratingAvg": 4.5,
+    "downloads": 220000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 700 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?camera,photography",
+    "title": "SnapCraft",
+    "companyName": "PhotoLab",
+    "id": 12,
+    "description": "SnapCraft is a creative photography and photo-editing app offering professional-grade filters, AI enhancements, and manual controls. From quick social edits to detailed retouching, SnapCraft empowers users to turn everyday photos into stunning visuals.",
+    "size": 98,
+    "reviews": 2300,
+    "ratingAvg": 4.6,
+    "downloads": 540000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1320 }
+    ]
+  },
   {
     "image": "https://source.unsplash.com/400x400/?music,headphones",
     "title": "MusicWave",
     "companyName": "SoundLab",
     "id": 13,
-    "description": "MusicWave lets you stream and download millions of songs with high-quality audio, personalized playlists, and offline listening. Discover new artists, create playlists, and enjoy music without limits.",
+    "description": "MusicWave lets you stream and download millions of songs with high-fidelity audio quality, personalized playlists, and offline listening capabilities. Its smart recommendation engine discovers new artists based on your taste, while the built-in equalizer allows you to customize the sound. With exclusive podcasts, live radio stations, and social sharing features, MusicWave offers a limitless audio experience for every music lover.",
     "size": 110,
     "reviews": 4100,
     "ratingAvg": 4.5,
@@ -143,6 +231,132 @@
       { "name": "3 star", "count": 420 },
       { "name": "4 star", "count": 1200 },
       { "name": "5 star", "count": 2160 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?calendar,planning",
+    "title": "Planify",
+    "companyName": "TaskForge",
+    "id": 14,
+    "description": "Planify is a smart scheduling and task-planning app designed to help individuals and teams stay organized. It combines calendar management, task prioritization, and deadline reminders into one clean interface. With AI-powered suggestions, shared calendars, and seamless cloud sync, Planify ensures you never miss an important meeting or milestone.",
+    "size": 48,
+    "reviews": 1350,
+    "ratingAvg": 4.4,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 580 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?language,learning",
+    "title": "LingoLift",
+    "companyName": "SpeakEasy",
+    "id": 15,
+    "description": "LingoLift makes learning new languages fun and effective through interactive lessons, pronunciation practice, and real-world conversations. It adapts to your skill level using AI and offers daily challenges, streak tracking, and offline access so you can practice anytime, anywhere.",
+    "size": 85,
+    "reviews": 2900,
+    "ratingAvg": 4.7,
+    "downloads": 720000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1900 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?shopping,ecommerce",
+    "title": "ShopSmart",
+    "companyName": "BuyWise",
+    "id": 16,
+    "description": "ShopSmart is an intelligent shopping companion that helps users compare prices, track deals, and discover trending products. With barcode scanning, wishlists, and real-time discount alerts, it ensures you always get the best value for your money.",
+    "size": 65,
+    "reviews": 1750,
+    "ratingAvg": 4.3,
+    "downloads": 410000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 520 },
+      { "name": "5 star", "count": 760 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?meditation,relax",
+    "title": "MindEase",
+    "companyName": "CalmWorks",
+    "id": 17,
+    "description": "MindEase is a wellness and meditation app focused on reducing stress and improving mental clarity. It offers guided meditations, breathing exercises, sleep stories, and mood tracking, helping users cultivate mindfulness and emotional balance daily.",
+    "size": 52,
+    "reviews": 2600,
+    "ratingAvg": 4.8,
+    "downloads": 680000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 640 },
+      { "name": "5 star", "count": 1740 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?news,media",
+    "title": "NewsPulse",
+    "companyName": "MediaNow",
+    "id": 18,
+    "description": "NewsPulse delivers breaking news and in-depth stories from trusted global sources. With personalized feeds, topic filters, and offline reading, it ensures you stay informed without information overload. Its clean design makes reading fast and distraction-free.",
+    "size": 58,
+    "reviews": 1900,
+    "ratingAvg": 4.2,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 110 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 520 },
+      { "name": "5 star", "count": 830 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?security,password",
+    "title": "SecureKey",
+    "companyName": "CyberShield",
+    "id": 19,
+    "description": "SecureKey is a trusted password manager that stores and encrypts your credentials securely. It features auto-fill, biometric authentication, and cross-platform sync. With breach alerts and password health checks, SecureKey helps protect your digital identity.",
+    "size": 42,
+    "reviews": 1600,
+    "ratingAvg": 4.6,
+    "downloads": 390000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 900 }
+    ]
+  },
+  {
+    "image": "https://source.unsplash.com/400x400/?budget,analytics",
+    "title": "MoneyMap",
+    "companyName": "WealthTrack",
+    "id": 20,
+    "description": "MoneyMap provides advanced financial insights by analyzing your income, expenses, and savings trends. With interactive charts, goal planning, and bank synchronization, it helps users make smarter financial decisions and build long-term wealth.",
+    "size": 75,
+    "reviews": 1400,
+    "ratingAvg": 4.4,
+    "downloads": 280000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 210 },
+      { "name": "4 star", "count": 430 },
+      { "name": "5 star", "count": 610 }
     ]
   }
 ]
