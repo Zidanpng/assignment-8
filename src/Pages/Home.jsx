@@ -85,12 +85,14 @@ const Home = () => {
             Explore All Trending Apps on the Market developed by us
           </p>
         </div>
-        <div className="grid grid-cols-4 grid-rows-2 gap-4">
+        <div className="grid grid-cols-2  lg:grid-cols-4 grid-rows-2 gap-4 px-8">
           {topApps.map((app) => (
             <div
               key={app.id}
               onClick={() => navigate(`/apps/${app.id}`)}
-              className="bg-white rounded-lg p-4 "
+              className="bg-white rounded-lg p-4 cursor-pointer border border-transparent 
+                 transition-all duration-300 ease-in-out 
+                 hover:-translate-y-3 hover:shadow-2xl hover:border-purple-200"
             >
               <img
                 className="h-72  bg-gray-500 rounded-lg mx-auto"

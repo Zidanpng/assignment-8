@@ -1,15 +1,20 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import logo from "../assets/logo.png";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+
 const Navbar = () => {
+  const navigate = useNavigate();
   const location = useLocation();
-  const isActive = (path) =>
-    location.pathname === path
-      ? "bg-gradient-to-br from-purple-800 to-purple-500 inline-block text-transparent bg-clip-text border-b border-purple-800"
-      : "text-gray-600";
+
+  const btnStyles = (path) => {
+    const isActive = location.pathname === path;
+    return isActive
+      ? " text-transparent bg-clip-text bg-gradient-to-br from-purple-800 to-purple-500 inline-block border-b-2 border-b border-purple-800"
+      : "text-gray-600 hover:text-purple-500 transition-colors px-1 pb-1";
+  };
   return (
-    <div className="navbar bg-base-100 shadow-sm px-8">
+    <div className="navbar bg-base-100 shadow-sm px-4 lg:px-8">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -34,45 +39,63 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <Link to="/" className={isActive("/")}>
+              <button onClick={() => navigate("/")} className={btnStyles("/")}>
                 Home
-              </Link>
+              </button>
             </li>
             <li>
-              <Link to="/apps" className={isActive("/apps")}>
+              <button
+                onClick={() => navigate("/apps")}
+                className={btnStyles("/apps")}
+              >
                 Apps
-              </Link>
+              </button>
             </li>
             <li>
-              <Link to="/installations" className={isActive("/installations")}>
+              <button
+                onClick={() => navigate("/installations")}
+                className={btnStyles("/installations")}
+              >
                 Installations
-              </Link>
+              </button>
             </li>
           </ul>
         </div>
-        <a className="btn font-bold text-xl text-gray-900 border-none bg-none">
+        <div
+          onClick={() => navigate("/")}
+          className="flex items-center gap-2 cursor-pointer transition-transform active:scale-95"
+        >
           <img src={logo} alt="logo" className="w-8 h-8 object-contain" />
-          <span className="bg-gradient-to-br from-purple-900 to-purple-500 text-transparent bg-clip-text">
+          <span
+            className="text-xl font-bold
+            bg-gradient-to-br from-purple-900 to-purple-500 text-transparent bg-clip-text"
+          >
             HERO.IO
           </span>
-        </a>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="flex items-center font-medium gap-8">
           <li>
-            <Link to="/" className={isActive("/")}>
+            <button onClick={() => navigate("/")} className={btnStyles("/")}>
               Home
-            </Link>
+            </button>
           </li>
           <li>
-            <Link to="/apps" className={isActive("/apps")}>
+            <button
+              onClick={() => navigate("/apps")}
+              className={btnStyles("/apps")}
+            >
               Apps
-            </Link>
+            </button>
           </li>
           <li>
-            <Link to="/installations" className={isActive("/installations")}>
+            <button
+              onClick={() => navigate("/installations")}
+              className={btnStyles("/installations")}
+            >
               Installations
-            </Link>
+            </button>
           </li>
         </ul>
       </div>
