@@ -80,7 +80,7 @@ const AppDetails = () => {
       <div className="max-w-6xl mx-auto p-0 md:p-6 pt-4 md:pt-8">
         <div className="flex flex-col md:flex-row gap-6 items-start">
           <img
-            className="w-40 h-40 md:w-1/2  lg:w-60 lg:h-60 object-contain border border-black"
+            className="w-40 h-40 md:w-1/2  lg:w-60 lg:h-60 object-contain rounded-lg"
             src={app.image}
             alt={app.title}
           />

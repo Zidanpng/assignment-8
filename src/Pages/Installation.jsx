@@ -67,11 +67,11 @@ const Installation = () => {
           sortedApps.map((app) => (
             <div
               key={app.id}
-              className="card flex-col sm:flex-row bg-base-100 shadow border items-center"
+              className="card flex-col sm:flex-row bg-base-100 shadow border border-gray-300 items-center"
             >
               <figure className="rounded-lg w-full sm:w-auto flex justify-center">
                 <img
-                  className="w-32 h-32 object-contain p-4 "
+                  className="w-32 h-32 object-contain p-4"
                   src={app.image}
                   alt={app.title}
                 />

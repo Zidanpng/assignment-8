@@ -16,11 +16,11 @@ const AppCard = ({ app }) => {
              transition-all duration-300 ease-in-out 
              hover:-translate-y-2 hover:shadow-2xl hover:border-purple-200"
     >
-      <div className="aspect-square w-full bg-gray-500 rounded-lg flex items-center justify-center overflow-hidden">
+      <div className="aspect-square w-full  rounded-lg flex items-center justify-center overflow-hidden">
         <img
           src={app.image}
           alt={app.title}
-          className="w-full h-full object-contain p-4"
+          className="w-full h-full object-contain  rounded-lg"
         />
       </div>
       <h3 className="font-semibold text-gray-800 text-[23px] text-center py-3">
