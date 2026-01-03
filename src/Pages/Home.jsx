@@ -30,7 +30,7 @@ const Home = () => {
     <>
       <div className="min-h-screen bg-[#f5f5f5] overflow-hidden">
         <div className="py-6 px-4 md:py-16">
-          <p className="text-4xl md:text-6xl font-bold text-center">
+          <p className="text-4xl md:text-6xl font-bold text-center text-[#001931]">
             We Build <br />
             <span className="bg-gradient-to-br from-purple-800 to-purple-500 text-transparent bg-clip-text">
               Productive
@@ -46,14 +46,14 @@ const Home = () => {
         </div>
         <div className="flex flex-wrap gap-4 mx-auto justify-center pb-10">
           <a
-            className="btn btn-outline border-gray-300 flex items-center gap-2"
+            className="btn btn-outline  text-outline border-gray-300 flex items-center bg-[#f5f5f5] text-black hover:bg-black hover:text-white gap-2"
             href="https://play.google.com/store/apps?hl=en_US"
           >
             <IoLogoGooglePlaystore />
             Google Play
           </a>
           <a
-            className="btn btn-outline border-gray-300 flex items-center gap-2"
+            className="btn btn-outline border-gray-300 flex items-center bg-[#f5f5f5] text-black hover:bg-black hover:text-white gap-2"
             href="https://www.apple.com/app-store/"
           >
             <FaAppStoreIos />
@@ -92,7 +92,7 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <p className="text-4xl md:text-5xl text-center font-bold pt-16 pb-4">
+          <p className="text-4xl md:text-5xl text-center font-bold pt-16 pb-4 text-[#001931]">
             Trending Apps
           </p>
           <p className="text-gray-400 text-center pb-10">

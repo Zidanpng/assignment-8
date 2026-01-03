@@ -38,7 +38,7 @@ const Installation = () => {
       <div className="px-0 sm:px-4 mx-auto">
         {/* header */}
         <div className="text-center mb-6">
-          <h1 className="text-3xl sm:text-4xl font-bold my-3">
+          <h1 className="text-3xl sm:text-4xl font-bold my-3 text-[#001931]">
             Your Installed Apps
           </h1>
           <p className="text-gray-600 text-sm">
@@ -46,13 +46,13 @@ const Installation = () => {
           </p>
         </div>
         {/* sort bar */}
-        <div className="flex justify-between mb-4">
+        <div className="flex justify-between text-[#001931] mb-4">
           <div className="font-bold text-xl">
             ({sortedApps.length}) Apps Found
           </div>
 
           <select
-            className="select select-bordered w-full sm:max-w-xs bg-white border-black"
+            className="select select-bordered w-full sm:max-w-xs bg-white border-black text-[#001931]"
             value={sortOrder}
             onChange={(e) => setSortOrder(e.target.value)}
           >
@@ -67,7 +67,7 @@ const Installation = () => {
           sortedApps.map((app) => (
             <div
               key={app.id}
-              className="card flex-col sm:flex-row bg-base-100 shadow border border-gray-300 items-center"
+              className="card flex-col sm:flex-row bg-[#f5f5f5] shadow border border-gray-300 items-center"
             >
               <figure className="rounded-lg w-full sm:w-auto flex justify-center">
                 <img
@@ -76,7 +76,7 @@ const Installation = () => {
                   alt={app.title}
                 />
               </figure>
-              <div className="card-body px-1 md:px-2 text-center sm:text-left">
+              <div className="card-body px-1 md:px-2 text-center sm:text-left text-[#001931]">
                 <h3 className="card-title justify-center sm:justify-start">
                   {app.title}
                 </h3>

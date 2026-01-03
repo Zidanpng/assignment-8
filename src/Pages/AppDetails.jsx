@@ -96,7 +96,7 @@ const AppDetails = () => {
             <div className="flex gap-12 mt-6">
               <div>
                 <img src={download} alt="" />
-                <p className="text-gray-500 text-sm">Downloads</p>
+                <p className="text-gray-500 text-sm pt-2 sm:pt-0">Downloads</p>
                 <p className="text-2xl font-bold">
                   {formatNumber(app.downloads)}
                 </p>
@@ -118,7 +118,7 @@ const AppDetails = () => {
             <button
               disabled={isInstalled}
               onClick={handleInstall}
-              className={`mt-6 px-8 py-3 rounded-md font-semibold text-white transition-all ${
+              className={`px-8 py-3 rounded-md font-semibold text-white transition-all ${
                 isInstalled
                   ? "bg-green-400 cursor-not-allowed"
                   : "bg-green-500 hover:bg-green-600"
@@ -131,7 +131,7 @@ const AppDetails = () => {
         <hr className="my-10" />
         {/* ratings */}
         <div className="h-64 w-full">
-          <h2 className="text-xl font-semibold mb-6">Ratings</h2>
+          <h2 className="text-[#001931] text-xl font-semibold mb-6">Ratings</h2>
 
           <ResponsiveContainer width="100%" height="100%">
             <BarChart

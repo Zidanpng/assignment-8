@@ -29,7 +29,7 @@ const Apps = () => {
       <div className="px-1 md:px-2 lg:px-4 mx-auto">
         {/* header */}
         <div className="text-center mb-6">
-          <h1 className="text-3xl md:text-4xl font-bold my-3">
+          <h1 className="text-[#001931] text-3xl md:text-4xl font-bold my-3">
             Our All Applications
           </h1>
           <p className="text-gray-600 text-sm">
@@ -38,9 +38,11 @@ const Apps = () => {
         </div>
         {/* search bar */}
         <div className="flex justify-between items-center mb-4">
-          <div className="font-bold">({filteredApps.length}) Apps Found</div>
+          <div className="font-bold text-[#001931]">
+            ({filteredApps.length}) Apps Found
+          </div>
           <div className="w-1/2 md:w-80">
-            <label className="input">
+            <label className="input bg-white text-[#001931]">
               <svg
                 className="h-[1em] opacity-50"
                 xmlns="http://www.w3.org/2000/svg"

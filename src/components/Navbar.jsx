@@ -14,7 +14,7 @@ const Navbar = () => {
       : "text-gray-600 hover:text-purple-500 transition-colors px-1 pb-1";
   };
   return (
-    <div className="navbar bg-base-100 shadow-sm px-1 md:px-4 lg:px-8">
+    <div className="navbar bg-base-100 shadow-sm px-1 md:px-4 lg:px-8 bg-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
