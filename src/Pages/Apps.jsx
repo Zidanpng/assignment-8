@@ -14,7 +14,8 @@ const Apps = () => {
       .then((data) => {
         setAppData(data);
         setLoading(false);
-      });
+      })
+      .catch(() => setLoading(false));
   }, []);
 
   if (loading) return <Loading></Loading>;
@@ -24,19 +25,21 @@ const Apps = () => {
   );
 
   return (
-    <div className="min-h-screen bg-[#f5f5f5] px-4 py-6">
-      <div className="px-8 mx-auto">
+    <div className="min-h-screen bg-[#f5f5f5] px-1 md:px-2 lg:px-4 py-2 md:py-6">
+      <div className="px-1 md:px-2 lg:px-4 mx-auto">
         {/* header */}
         <div className="text-center mb-6">
-          <h1 className="text-4xl font-bold my-3">Our All Applications</h1>
+          <h1 className="text-3xl md:text-4xl font-bold my-3">
+            Our All Applications
+          </h1>
           <p className="text-gray-600 text-sm">
             Explore All Apps on the Market developed by us. We code for Millions
           </p>
         </div>
         {/* search bar */}
-        <div className="flex justify-between mb-4">
+        <div className="flex justify-between items-center mb-4">
           <div className="font-bold">({filteredApps.length}) Apps Found</div>
-          <div>
+          <div className="w-1/2 md:w-80">
             <label className="input">
               <svg
                 className="h-[1em] opacity-50"

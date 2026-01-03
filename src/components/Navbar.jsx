@@ -14,7 +14,7 @@ const Navbar = () => {
       : "text-gray-600 hover:text-purple-500 transition-colors px-1 pb-1";
   };
   return (
-    <div className="navbar bg-base-100 shadow-sm px-4 lg:px-8">
+    <div className="navbar bg-base-100 shadow-sm px-1 md:px-4 lg:px-8">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
         <div
           onClick={() => navigate("/")}
-          className="flex items-center gap-2 cursor-pointer transition-transform active:scale-95"
+          className="flex items-center gap-1 md:gap-2 cursor-pointer transition-transform active:scale-95"
         >
           <img src={logo} alt="logo" className="w-8 h-8 object-contain" />
           <span
@@ -102,7 +102,7 @@ const Navbar = () => {
       <div className="navbar-end">
         <a
           href="https://github.com/Zidanpng"
-          className="btn text-white bg-gradient-to-br from-purple-900 to-purple-500"
+          className="btn text-white bg-gradient-to-br from-purple-900 to-purple-500 hover:scale-105 transition-transform"
         >
           <FaGithub /> Contribute
         </a>

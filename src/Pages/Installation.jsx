@@ -34,11 +34,13 @@ const Installation = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#f5f5f5] px-4 py-6">
-      <div className="px-4 mx-auto">
+    <div className="min-h-screen bg-[#f5f5f5] px-2 sm:px-4 py-6">
+      <div className="px-0 sm:px-4 mx-auto">
         {/* header */}
         <div className="text-center mb-6">
-          <h1 className="text-4xl font-bold my-3">Your Installed Apps</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold my-3">
+            Your Installed Apps
+          </h1>
           <p className="text-gray-600 text-sm">
             Explore All Trending Apps on the Market developed by us
           </p>
@@ -50,7 +52,7 @@ const Installation = () => {
           </div>
 
           <select
-            className="select select-bordered w-full max-w-xs bg-white border-black"
+            className="select select-bordered w-full sm:max-w-xs bg-white border-black"
             value={sortOrder}
             onChange={(e) => setSortOrder(e.target.value)}
           >
@@ -60,22 +62,24 @@ const Installation = () => {
           </select>
         </div>
       </div>
-      <div className="space-y-3 px-4">
+      <div className="grid grid-cols-1 gap-4 px-0 sm:px-4">
         {sortedApps.length > 0 ? (
           sortedApps.map((app) => (
             <div
               key={app.id}
-              className="card card-side bg-base-100 shadow border"
+              className="card flex-col sm:flex-row bg-base-100 shadow border items-center"
             >
-              <figure className="rounded-lg">
+              <figure className="rounded-lg w-full sm:w-auto flex justify-center">
                 <img
-                  className="w-32 h-32 object-cover p-4 "
+                  className="w-32 h-32 object-contain p-4 "
                   src={app.image}
                   alt={app.title}
                 />
               </figure>
-              <div className="card-body">
-                <h3 className="card-title">{app.title}</h3>
+              <div className="card-body px-1 md:px-2 text-center sm:text-left">
+                <h3 className="card-title justify-center sm:justify-start">
+                  {app.title}
+                </h3>
                 <div className="flex items-center gap-3">
                   <div className="flex items-center p-1 rounded-sm">
                     <span className="mr-1">
@@ -102,7 +106,7 @@ const Installation = () => {
                   </div>
                 </div>
               </div>
-              <div className="pr-4 flex items-center">
+              <div className="p-4 sm:pr-6 items-center">
                 <button
                   onClick={() => handleUninstall(app.id, app.title)}
                   className="btn btn-outline text-white bg-green-400"

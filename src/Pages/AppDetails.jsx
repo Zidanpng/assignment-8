@@ -5,6 +5,7 @@ import like from "../assets/icon-review.png";
 import { useNavigate, useParams } from "react-router-dom";
 import { IoArrowBack } from "react-icons/io5";
 import { toast } from "react-toastify";
+import Error from "./Error";
 import {
   Bar,
   BarChart,
@@ -13,15 +14,17 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import Error from "./Error";
+import Loading from "../components/Loading";
 
 const AppDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [app, setApp] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [isInstalled, setIsInstalled] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     fetch("/apps.json")
       .then((res) => res.json())
       .then((data) => {
@@ -31,9 +34,18 @@ const AppDetails = () => {
           localStorage.getItem("installedApps") || "[]"
         );
         setIsInstalled(installed.some((item) => item.id.toString() === id));
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
+        setLoading(false);
       });
+    window.scroll(0, 0);
   }, [id]);
 
+  if (loading) {
+    return <Loading />;
+  }
   if (!app) {
     return <Error />;
   }
@@ -57,25 +69,25 @@ const AppDetails = () => {
   );
 
   return (
-    <div className="bg-[#f5f5f5] p-8">
+    <div className="bg-[#f5f5f5] px-2 md:px-4 lg:p-8">
       <button
         onClick={() => navigate(-1)}
-        className="flex items-center gap-2 text-purple-700 font font-semibold mb-6"
+        className="flex items-center gap-2 text-purple-700 font font-bold py-4 "
       >
         <IoArrowBack />
         Go Back
       </button>
-      <div className=" max-w-6xl mx-auto p-6 pt-8 bg-[#f5f5f5]">
-        <div className="flex gap-6 items-start">
+      <div className="max-w-6xl mx-auto p-0 md:p-6 pt-4 md:pt-8">
+        <div className="flex flex-col md:flex-row gap-6 items-start">
           <img
-            className="md:w-1/2  lg:w-60 h-60 object-contain border border-black"
+            className="w-40 h-40 md:w-1/2  lg:w-60 lg:h-60 object-contain border border-black"
             src={app.image}
-            alt=""
+            alt={app.title}
           />
           <div className="flex-1">
             <h1 className="text-4xl font-bold text-gray-900">{app.title}</h1>
             <p className="text-gray-500 mt-1">
-              Developed by
+              Developed by:
               <span className="text-purple-600 font-medium cursor-pointer">
                 {app.companyName}
               </span>
@@ -102,6 +114,7 @@ const AppDetails = () => {
                 </p>
               </div>
             </div>
+
             <button
               disabled={isInstalled}
               onClick={handleInstall}
@@ -171,7 +184,7 @@ const AppDetails = () => {
         <hr className="my-12 border-slate-200" />
         <div className="max-w-5xl">
           <h2 className="text-xl font-bold mb-6 text-slate-800">Description</h2>
-          <div className="text-slate-500 text-[15px] leading-7 space-y-4 whitespace-pre-line  text-justify">
+          <div className="text-slate-500 text-[15px] leading-7 space-y-4 pb-4 whitespace-pre-line text-justify">
             {app.description}
           </div>
         </div>
